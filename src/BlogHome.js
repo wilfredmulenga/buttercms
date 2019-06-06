@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import butter from './butter-client'
+import { Helmet } from 'react-helmet'
 
 class BlogHome extends Component {
 
@@ -41,6 +42,9 @@ class BlogHome extends Component {
 
       return (
         <div>
+          <Helmet>
+            <title>Blog home</title>
+          </Helmet>
           {this.state.resp.data.map((post) => {
             return (
               <div key={post.slug}>
