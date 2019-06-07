@@ -35,8 +35,8 @@ class BlogPost extends Component {
             <meta name="description" content="Todos on steroid!" />
             <meta name="theme-color" content="#008f68" />
             <meta name='twitter:image' content='/images/mission-people.svg' />
-            <meta name='twitter:title' content={ blog.title } />
-            <meta name='twitter:description' content={`https://zazuafrica.com${blog.slug}`} />
+            <meta name='twitter:title' content={ post.title } />
+            <meta name='twitter:description' content={`https://zazuafrica.com${post.slug}`} />
           </Helmet>
           <div dangerouslySetInnerHTML={{__html: post.body}} />
         </div>
