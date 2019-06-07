@@ -34,6 +34,9 @@ class BlogPost extends Component {
             <title>Turbo Todo</title>
             <meta name="description" content="Todos on steroid!" />
             <meta name="theme-color" content="#008f68" />
+            <meta name='twitter:image' content='/images/mission-people.svg' />
+            <meta name='twitter:title' content={ blog.title } />
+            <meta name='twitter:description' content={`https://zazuafrica.com${blog.slug}`} />
           </Helmet>
           <div dangerouslySetInnerHTML={{__html: post.body}} />
         </div>
