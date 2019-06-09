@@ -31,10 +31,11 @@ class BlogPost extends Component {
         <div>
           <h1>{post.title}</h1>
           <Helmet>
-            <title>Turbo Todo</title>
-            <meta name="description" content="Todos on steroid!" />
-            <meta name="theme-color" content="#008f68" />
-            <meta name='twitter:image' content='/images/mission-people.svg' />
+            <title>Advertising Zazu</title>
+            <meta property="description" content="Advertising Zazu" />
+            <meta name='og:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
+            <meta name='twitter:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
+            <meta name='twitter:image:src' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
             <meta name='twitter:title' content={ post.title } />
             <meta name='twitter:description' content={`https://zazuafrica.com${post.slug}`} />
           </Helmet>
