@@ -32,7 +32,7 @@ class BlogPost extends Component {
           <h1>{post.title}</h1>
           <Helmet>
             <meta property='og:title' content='this is the title' />
-            <meta property="description" content="This a the description" />
+            <meta property="og:description" content="This a the description" />
             <meta name='og:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
             <meta name='og:url' content={`https://zazuafrica.com${post.slug}`} />
             <meta name="twitter:card" content="summary_large_image"/>
