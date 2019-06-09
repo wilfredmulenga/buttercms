@@ -31,13 +31,16 @@ class BlogPost extends Component {
         <div>
           <h1>{post.title}</h1>
           <Helmet>
-            <title>Advertising Zazu</title>
-            <meta property="description" content="Advertising Zazu" />
+            <meta property='og:title' content='this is the title' />
+            <meta property="description" content="This a the description" />
             <meta name='og:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
-            <meta name='twitter:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
-            <meta name='twitter:image:src' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
-            <meta name='twitter:title' content={ post.title } />
-            <meta name='twitter:description' content={`https://zazuafrica.com${post.slug}`} />
+            <meta name='og:url' content={`https://zazuafrica.com${post.slug}`} />
+            <meta name="twitter:card" content="summary_large_image">
+            <!--  Non-Essential, But Recommended -->
+            <meta property="og:site_name" content="Zazu">
+            <!--  Non-Essential, But Required for Analytics -->
+            <meta property="fb:app_id" content="your_app_id" />
+            <meta name="twitter:site" content="@website-username">
           </Helmet>
           <div dangerouslySetInnerHTML={{__html: post.body}} />
         </div>
