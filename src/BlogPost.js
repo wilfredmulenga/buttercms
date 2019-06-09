@@ -36,9 +36,9 @@ class BlogPost extends Component {
             <meta name='og:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
             <meta name='og:url' content={`https://zazuafrica.com${post.slug}`} />
             <meta name="twitter:card" content="summary_large_image">
-            <!--  Non-Essential, But Recommended -->
+            {/* Non-Essential, But Recommended */}
             <meta property="og:site_name" content="Zazu">
-            <!--  Non-Essential, But Required for Analytics -->
+            {/* Non-Essential, But Required for Analytics */}
             <meta property="fb:app_id" content="your_app_id" />
             <meta name="twitter:site" content="@website-username">
           </Helmet>
