@@ -33,8 +33,8 @@ class BlogPost extends Component {
           <Helmet>
             <meta property='og:title' content='this is the title' />
             <meta property="og:description" content="This a the description" />
-            <meta name='og:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
-            <meta name='og:url' content={`https://zazuafrica.com${post.slug}`} />
+            <meta property='og:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
+            <meta property='og:url' content={`https://zazuafrica.com${post.slug}`} />
             <meta name="twitter:card" content="summary_large_image"/>
             {/* Non-Essential, But Recommended */}
             <meta property="og:site_name" content="Zazu"/>
