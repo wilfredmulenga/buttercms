@@ -35,12 +35,12 @@ class BlogPost extends Component {
             <meta property="description" content="This a the description" />
             <meta name='og:image' content='https://cdn.buttercms.com/nxPA8YzQQmOoZUAXKvjd' />
             <meta name='og:url' content={`https://zazuafrica.com${post.slug}`} />
-            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:card" content="summary_large_image"/>
             {/* Non-Essential, But Recommended */}
-            <meta property="og:site_name" content="Zazu">
+            <meta property="og:site_name" content="Zazu"/>
             {/* Non-Essential, But Required for Analytics */}
             <meta property="fb:app_id" content="your_app_id" />
-            <meta name="twitter:site" content="@website-username">
+            <meta name="twitter:site" content="@website-username"/>
           </Helmet>
           <div dangerouslySetInnerHTML={{__html: post.body}} />
         </div>
